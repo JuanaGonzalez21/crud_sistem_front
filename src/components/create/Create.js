@@ -14,14 +14,14 @@ const Create = () => {
 
   const [ticket_problema, setTicket_problema] = useState('');
   const [ticket_envio, setTicket_envio] = useState('');
-  const [fecha_llegada_correspondencia, setFecha_llegada_correspondencia] = useState('');
+  const [fecha_llegada_correspondencia, setFecha_llegada_correspondencia] = useState(new Date());
   const [n_guia, setN_guia] = useState('');
-  const [fecha_salida, setFecha_salida] = useState('');
+  const [fecha_salida, setFecha_salida] = useState(new Date());
   const [destino, setDestino] = useState('');
   const [usuario_orden, setUsuario_orden] = useState('');
-  const [n_contacto, setN_contacto] = useState('');
+  const [n_contacto, setN_contacto] = useState(0);
   const [agente_envia, setAgente_envia] = useState('');
-  const [consecutivo, setConsecutivo] = useState('');
+  const [consecutivo, setConsecutivo] = useState(0);
   const [n_consecutivo, setN_consecutivo] = useState('');
   const [area_envia, setArea_envia] = useState('');
   const [equipo, setEquipo] = useState('');
@@ -34,8 +34,7 @@ const Create = () => {
 
   const store = async (e) => {
     e.preventDefault()
-    const showdate = new Date();
-    const fecha = showdate.getDate() + '-' + (showdate.getMonth() + 1) + '-' + showdate.getFullYear()
+    
     await axios.post(Api + "/create",
       {
         ticket_problema: ticket_problema,
@@ -43,7 +42,7 @@ const Create = () => {
         fecha_llegada_correspondencia: fecha_llegada_correspondencia,
         n_guia: n_guia,
         fecha_salida: fecha_salida,
-        destino: destino,
+        estino: destino,
         usuario_orden: usuario_orden,
         n_contacto: n_contacto,
         agente_envia: agente_envia,
@@ -224,7 +223,7 @@ const Create = () => {
           </div>
         </Toast>
       </div >
-      {/*
+      {/* 
     <div>
       <h3>crear orden de salida</h3>
       <form onSubmit={store}>
@@ -256,7 +255,7 @@ const Create = () => {
       </form>
       <Link to={'/'} className='btn btn-info'>Volver</Link>
   
-    </div>*/}
+    </div> */}
     </>
 
   )

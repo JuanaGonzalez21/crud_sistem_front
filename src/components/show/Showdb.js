@@ -72,14 +72,14 @@ const Showdb = () => {
               <tbody>
                 {ordenes.map((orde) => (
                   <tr key={orde.id} className='table__medides'>
-                    <td> {orde.id} </td>
-                    <td> {orde.n_consecutivo} </td>
-                    <td> {orde.agente_envia} </td>
-                    <td> {orde.area_envia} </td>
+                    <td> {orde.consecutivo} </td>
+                    <td> {orde.usuario_orden} </td>
+                    <td> {orde.equipo} </td>
+                    <td> {orde.fecha_salida} </td>
                     <td>
-                      <Link to={`/editar/${orde.id}`} className='btn btn-info'><i class="fa-solid fa-file-pen"></i></Link>
-                      <button onClick={() => deleteOrden(orde.id)} className='btn btn-danger'><i class="fa-sharp fa-solid fa-trash"></i></button>
-                      <button  className='btn btn-primary' onClick={FuncionPrint}><i class="fa-solid fa-print"></i></button></td>
+                      <Link to={`/editar/${orde.id}`} className='btn btn-info'><i className="fa-solid fa-file-pen"></i></Link>
+                      <button onClick={() => deleteOrden(orde.id)} className='btn btn-danger'><i className="fa-sharp fa-solid fa-trash"></i></button>
+                      <button  className='btn btn-primary' onClick={FuncionPrint}><i className="fa-solid fa-print"></i></button></td>
                       <div style={{display:'none'}}>
                       <div ref={componentRef} id='documento'><ComponentToPrint/></div>
                     
