@@ -3,7 +3,8 @@ import Showdb from './components/show/Showdb'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Create from './components/create/Create'
 import Edit from './components/edit/Edit'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from '../src/components/navbar/Navbar.jsx'
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <>
     <div>
       <BrowserRouter>
+      <Navbar></Navbar>
         <Routes>
           <Route path='/' element={<Showdb/>}/>
           <Route path='/crear' element={<Create/>}/>

@@ -1,0 +1,79 @@
+.document {
+    padding: 10px 50px;
+}
+
+.container__form{
+    margin: 30px;
+}
+
+.p__uno {
+    margin-top: 0pt;
+    margin-bottom: 10pt;
+    line-height: 115%;
+    font-size: 10pt;
+    
+}
+
+.p__dos {
+    margin-top: 0pt;
+    margin-bottom: 0pt; 
+    font-size: 10pt
+}
+
+.document table {
+    width: 100%;
+    border-collapse: 'collapse';
+}
+
+
+.buttonPrint{
+    background-color: aquamarine;
+}
+
+.nonenborder {
+    border: 0;
+}
+
+.width__listado{
+    padding: 20px;
+    width: 100% !important;
+}
+.center__title {
+    padding-bottom: 20px;
+}
+.btn__derecha {
+    text-align: right !important;
+}
+.table__medides{
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* LISTADO */
+
+th{
+    padding: 0px 20px 10px !important;
+}
+
+td{
+    padding: 8px 20px !important;
+}
+.ultimo__espacio{
+    text-align: center;
+    
+}
+.pagination__edition{
+    color: black !important;
+    text-align: center !important ;
+}
+ 
+.destinno {
+    display: none;
+}
+
+.div_cargando_informacion{
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+}

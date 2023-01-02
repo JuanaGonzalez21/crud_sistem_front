@@ -1,0 +1,49 @@
+.container__form{
+    margin: 30px;
+}
+
+.datos__tickets {
+    display: none;
+}
+
+.datos_de_destino{
+    display: none;
+}
+
+.title__crear{
+    color: rgb(150, 150, 150);
+    padding: 0px 10px;
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.end__crear div {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+
+}
+
+.espace__editar{
+    display: flex;
+}
+
+.espace__none {
+    margin: 0 !important;
+    padding:  0 !important;
+}
+.end__crear input{
+    color: rgb(150, 150, 150);
+    text-align: center;
+    border: white;
+    width: 100px;
+}
+
+.end__crear h5{
+    font-size: 15px !important;
+}
+
+.end__crear h6{
+    font-size: 15px !important;
+}
